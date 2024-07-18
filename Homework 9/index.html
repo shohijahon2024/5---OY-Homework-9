@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="loading">Loading...</div>
+    <div id="user-cards"></div>
+    <p>Page content</p>
+    <div class='pre-loader'>
+        <img class='loading-gif' alt='loading' src="https://media.giphy.com/media/RHEqKwRZDwFKE/giphy.gif?cid=ecf05e478a2m5caoaiqgt9bwis702bo0yvb8oddgerdrqwi2&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+    </div>
+    <script type='text/javascript'>
+        window.addEventListener('load', function () {
+            document.querySelector('.pre-loader').className += ' hidden';
+        });
+    </script>
+
+    <script type="module" src="./script/app.js"></script>
+
+</body>
+</html>
